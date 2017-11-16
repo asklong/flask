@@ -1,0 +1,4 @@
+socket.error: [Errno 48] Address already in use:
+因为之前占用的5000端口，所以直接用lsof查该端口占用的进程。
+$ sudo lsof -i:5000
+sudo kill PID
